@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DISPOSITIVOS DE E/S - CAMARA</title>
+        <link rel="icon" href="data:;base64,iVBORw0KGgO">
+        <link rel="stylesheet" href="camara.css">
+        <script defer src="camara.js"></script>
+    </head>
+    <body>
+        <button id="iniciar-camara">INICIAR LA CAMARA</button>
+        <video id="video" width="320" height="240" autoplay></video>
+        <button id="clic-foto">TOMAR FOTO</button>
+        <div id="dataurl-container">
+            <canvas id="canvas" width="320" height="240"></canvas>
+            <div id="dataurl-header">Data URL de la imagen</div>
+            <textarea id="dataurl" readonly></textarea>
+        </div>
+
+
+        <div style="width:640px;height:480px;max-width:100%">
+            <div id="game"></div>
+          </div>
+    <script type="text/javascript">
+        EJS_player = '#game';
+        EJS_biosUrl = '';
+        EJS_gameUrl = 'https://download.freeroms.com/gameboy_advance_roms/tekken_advance.zip'; // Url to Game rom
+        EJS_core = 'gba'; // Optional core: vbam, vbanext
+    </script>
+    <script src="https://www.emulatorjs.com/loader.js"></script>
+
+
+    </body>
+
+</html>
